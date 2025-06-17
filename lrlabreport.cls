@@ -1129,20 +1129,25 @@
   }
   \def\@maketitle{%
     \newpage\null
-    \vskip 2em
+    \vskip 0.5em%2em
     \begin{center}%
       \let\footnote\thanks
-      {\LARGE \@title \par}%
-      \vskip 1.5em
-      {\large
+      %{\LARGE 
+      {\large \bf \@title \par}%
+      \vskip 1em%1.5em
+      {%\large
+       \small
         \lineskip .5em
-        \begin{tabular}[t]{c}%
-          \@author
+        % \begin{tabular}[t]{c}%
+        %   \@author
+        % \end{tabular}\par}%
+        \begin{tabular}[t]{rl}%
+          \@date & \@author
         \end{tabular}\par}%
-      \vskip 1em
-      {\large \@date}%
+      %\vskip 1em
+      %{\large \@date}%
     \end{center}%
-    \par\vskip 1.5em
+    \par\vskip .5em%1.5em
     \ifvoid\@abstractbox\else\centerline{\box\@abstractbox}\vskip1.5em\fi
   }
 \fi
