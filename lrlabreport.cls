@@ -1127,13 +1127,13 @@
     \global\let\date\relax
     \global\let\and\relax
   }
-  \def\@maketitle{%
+  \def\@maketitle{% fk mod
     \newpage\null
     \vskip 0.5em%2em
     \begin{center}%
       \let\footnote\thanks
       %{\LARGE 
-      {\large \bf \@title \par}%
+      {\large \bf \maybeblue \@title \par}%
       \vskip 1em%1.5em
       {%\large
        \small
