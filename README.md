@@ -1,6 +1,9 @@
 # lrlabreport
 Template to create a lab-internal report document
 
+1. Write your report as a normal document
+2. Present it as slides with the `slide` option of `\documentlcass` 
+
 ### How to link this repository to any existing local latex project folder (a memorandum)
 ```
 $ cd any-latex-or-overleaf-project-folder
