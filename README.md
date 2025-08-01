@@ -2,10 +2,16 @@
 
 ### Template to create a lab-internal report document
 
+0. Use lrlab-report-template.tex to create a report
 1. Write your report as a normal (paper-like) document
 2. Present it as slides with the `slide` option of `\documentlcass` (if appropriate)
 
-### How to link this repository to any existing local latex project folder (a memorandum)
+### Template to create your bibliography survey/résumé
+
+0. Use related-work-template.tex to create your résumé
+1. Follow the instructions in the templatelike) document
+
+### How to link this repository to any existing local latex project folder (a memorandum for administration)
 ```
 $ cd any-latex-or-overleaf-project-folder
 $ git init
