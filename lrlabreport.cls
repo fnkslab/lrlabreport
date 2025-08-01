@@ -1322,7 +1322,7 @@
     {\z@}{\if@slide .4\Cvs \else \z@ \fi}%
     {\normalfont\normalsize\headfont}}
 \else
-  \newcommand{\subsection}{\if@slide\clearpage\fi%
+  \newcommand{\subsection}{\if@slide\clearpage\fi% fk mod
     \@startsection{subsection}{2}{\z@}%
     {\Cvs \@plus.5\Cdp \@minus.2\Cdp}% 前アキ
     {.5\Cvs \@plus.3\Cdp}% 後アキ
