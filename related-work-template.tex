@@ -1,0 +1,120 @@
+%%%%%%
+%
+%  @@@@@@@ related-work template @@@@@@
+%  Use this template for compiling related work notes.
+%  Unlike lrlab-report, you do not need to create a tex file for each reporting event.
+%  Keep updating one tex file for your research theme.%
+%
+%%%%%%
+%% Set the compiler to LaTeX on Overleaf
+%%%%%%
+%% Comment out one of the two \documentclass lines
+%%%%%%
+\documentclass[slide]{lrlabreport}
+\date{\bf Related-Work Notes for:} % No need to edit this definition
+\renewcommand{\refname}{参考文献一覧/Bibliography}
+
+\usepackage{lrlabreport} % lrlabreport.sty
+\newbibfield{title}
+\newbibfield{author}
+\newbibfield{journal}
+\newbibfield{booktitle}
+\newbibfield{url}
+\newbibfield{doi}
+\newbibfield{abstract}
+\bibinput{sample} % required by usebib.sty called in lrlabreport.sty
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Paper information commands
+% (Customize as you like)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\jour}[1]{%
+{\footnotesize
+\begin{description}
+\item[Title:] {\color{blue}\bf \usebibentry{#1}{title}}
+\item[Author(s):] \usebibentry{#1}{author}
+\item[Journal:] \usebibentry{#1}{journal}
+\item[DOI:] \url{http://doi.org/\usebibentry{#1}{doi}}
+\end{description}
+}
+}
+
+\newcommand{\conf}[1]{%
+{\footnotesize
+\begin{description}
+\item[Title:] {\color{blue}\bf\usebibentry{#1}{title}}
+\item[Author(s):] \usebibentry{#1}{author}
+\item[Conference:] \usebibentry{#1}{booktitle}
+\item[URL:] \usebibentryurl{#1}
+\end{description}
+}
+}
+
+\newcommand{\abst}[1]{%
+{\footnotesize
+Abstract: \usebibentry{#1}{abstract}
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% define here your commands as you want
+% E.g., \newcommand{\eg}{\textit{e.g.,}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% title page content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Your Research Theme}
+
+\author{Student's name in both Latin alphabet and 漢字 (if you have)}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+\noindent
+    Summarize your research theme, motivation, and goal.
+\end{abstract}
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% body content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Category 1}
+
+\I Use \verb|\section| to categorize references
+\I Describe the category briefly below \verb|\section| like this
+
+\subsection{\cite{devlin-etal-2019-bert}}
+\conf{devlin-etal-2019-bert}
+\I Use \verb|subsection| for describing each paper
+\I Leave any note for you here
+\I It is good to note the source of the reference information (e.g., ``from Professor'', ``found accidentally'', ``cited by \cite{nakaneNLP2025}'', etc.)
+
+\subsection{\cite{PLV}}
+\jour{PLV}
+\I Use \verb|\conf| to show conference paper information
+\I A conference paper should have a \verb|url| field
+\I Use \verb|\jour| to show journal paper information
+\I A conference paper should has a \verb|doi| field
+
+\section{Category 2}
+
+\I The second group example
+\I If you do not need categories, just remove \verb|\section|
+\I As you use \verb|\subsection| for papers, categories cannot be hierarchical (flat category structure).
+
+\subsection{\cite{nakaneNLP2025}}
+\conf{nakaneNLP2025}
+\abst{nakaneNLP2025} 
+
+\I If you want to show abstract as above, use \verb|\abst|
+
+\footnotesize
+\bibliographystyle{apalike}
+\bibliography{sample} % should be the same or include the bib file for \bibinput
+
+\end{document}
