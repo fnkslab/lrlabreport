@@ -6,10 +6,10 @@
 1. Write your report as a normal (paper-like) document
 2. Present it as slides with the `slide` option of `\documentlcass` (if appropriate)
 
-### Template to create your bibliography survey/résumé
+### Template to create your survey/bibliography résumé
 
-0. Use related-work-template.tex to create your résumé
-1. Follow the instructions in the templatelike) document
+0. Use related-work-template.tex to create your résumé of the related work
+1. Follow the instructions in the template
 
 ### How to link this repository to any existing local latex project folder (a memorandum for administration)
 ```
