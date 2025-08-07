@@ -1,5 +1,8 @@
 # lrlabreport
 
+Overleaf project read-only link: https://www.overleaf.com/read/rkjmyjtqypbk#a0cdb1
+(This overleafe project may contain updates not pushed into [the GitHub repository](https://github.com/fnkslab/lrlabreport))
+
 ### Template to create a lab-internal report document
 
 0. Use lrlab-report-template.tex to create a report
@@ -10,6 +13,8 @@
 
 0. Use related-work-template.tex to create your résumé of the related work
 1. Follow the instructions in the template
+
+---
 
 ### How to link this repository to any existing local latex project folder (a memorandum for administration)
 ```
